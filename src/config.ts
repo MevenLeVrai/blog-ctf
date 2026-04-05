@@ -1,0 +1,23 @@
+export const SITE = {
+  website: "https://ctf.mevendesbois.com/",
+  author: "Meven Desbois",
+  profile: "https://mevendesbois.com/",
+  desc: "CTF writeups, security labs et notes techniques par Meven Desbois.",
+  title: "Meven | CTF & Security",
+  ogImage: "og-image.png",
+  lightAndDarkMode: true,
+  postPerIndex: 10,
+  postPerPage: 10,
+  scheduledPostMargin: 15 * 60 * 1000,
+  showArchives: true,
+  showBackButton: true,
+  editPost: {
+    enabled: false,
+    text: "Edit page",
+    url: "https://github.com/MevenLeVrai/ctf-writeups/edit/main/",
+  },
+  dynamicOgImage: true,
+  dir: "ltr",
+  lang: "fr",
+  timezone: "Europe/Paris",
+} as const;

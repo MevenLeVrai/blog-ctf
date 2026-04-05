@@ -1,0 +1,97 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import IconGitHub from "@/assets/icons/IconGitHub.svg";
+import IconLinkedIn from "@/assets/icons/IconLinkedin.svg";
+import IconMail from "@/assets/icons/IconMail.svg";
+---
+<Layout
+  title="About | Meven CTF & Security"
+  description="À propos de Meven Desbois — étudiant en cybersécurité, CTF player et junior sysadmin."
+>
+  <Header />
+  <main class="app-layout max-w-none py-12 prose dark:prose-invert prose-neutral">
+    <h1 class="not-prose mb-2 text-4xl font-bold text-zinc-900 dark:text-zinc-100">
+      Meven Desbois
+    </h1>
+
+    <p class="not-prose mb-8 font-mono text-sm text-cyan-700 dark:text-cyan-400">
+      Étudiant B2 · Systèmes, Réseaux, Cloud & Cybersécurité
+    </p>
+
+    <section class="mb-10">
+      <h2 class="mb-3 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+        👤 Qui suis-je ?
+      </h2>
+      <p class="leading-relaxed text-zinc-700 dark:text-zinc-300">
+        Étudiant en deuxième année à <strong>Sup De Vinci Nantes</strong> en Systèmes, Réseaux, Cloud et Cybersécurité.
+        Passionné par les CTF, l'administration système et le DevOps, je construis des projets autour de l'automatisation,
+        de la sécurité et de l'observabilité.
+      </p>
+      <p class="mt-3 leading-relaxed text-zinc-700 dark:text-zinc-300">
+        Ce blog est dédié à mes <strong>writeups CTF</strong>, mes labs de sécurité et mes notes techniques.
+        Pour mon portfolio complet, rendez-vous sur
+        <a
+          href="https://mevendesbois.com"
+          class="underline decoration-cyan-500 underline-offset-4 hover:no-underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          mevendesbois.com
+        </a>.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="mb-3 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+        🛠️ Stack & Outils
+      </h2>
+      <div class="not-prose grid grid-cols-2 gap-2 text-sm font-mono sm:grid-cols-3">
+        {["Kali Linux", "Burp Suite", "Nmap", "Wireshark", "Metasploit", "Hydra", "John the Ripper", "Feroxbuster", "HackTheBox", "TryHackMe"].map((tool) => (
+          <span class="rounded bg-zinc-100 px-3 py-1 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100">
+            {tool}
+          </span>
+        ))}
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="mb-3 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+        🏆 CTF & Compétitions
+      </h2>
+      <ul class="list-disc space-y-2 pl-6 text-zinc-700 dark:text-zinc-300">
+        <li>196ème / 2 000 — COM Cyber CTF Opération Bellatrix (COMCYBER, 2026)</li>
+        <li>Joueur actif sur HackTheBox & TryHackMe</li>
+        <li>Participation régulière à des CTF nationaux et internationaux</li>
+      </ul>
+    </section>
+
+
+    <section class="mb-10">
+      <h2 class="mb-3 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">📬 Contact</h2>
+      <ul class="list-none space-y-3 pl-0 text-zinc-700 dark:text-zinc-300">
+        <li class="flex items-center gap-3 break-words">
+          <IconMail class="h-4 w-4 text-cyan-600 dark:text-cyan-400" />
+          <a href="mailto:meven.desbois@icloud.com">meven.desbois@icloud.com</a>
+        </li>
+
+        <li class="flex items-center gap-3 break-words">
+          <IconGitHub class="h-4 w-4 text-cyan-600 dark:text-cyan-400" />
+          <a href="https://github.com/MevenLeVrai" target="_blank" rel="noopener noreferrer">
+            github.com/MevenLeVrai
+          </a>
+        </li>
+
+        <li class="flex items-center gap-3 break-words">
+          <IconLinkedIn class="h-4 w-4 text-cyan-600 dark:text-cyan-400" />
+          <a href="https://www.linkedin.com/in/mevendesbois" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/mevendesbois
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <Footer />
+</Layout>
