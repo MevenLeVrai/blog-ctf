@@ -4,6 +4,8 @@ import { ClientRouter } from "astro:transitions";
 import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
 import { SITE } from "@/config";
 import "@/styles/global.css";
+import Analytics from "@vercel/analytics/astro";
+
 
 type Props = {
   title?: string;
@@ -60,6 +62,9 @@ const structuredData = {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
+
+    <Analytics />
+
 
     <!-- Load Font -->
     <Font
