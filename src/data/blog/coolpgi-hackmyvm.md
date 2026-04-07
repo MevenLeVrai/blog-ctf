@@ -1,7 +1,7 @@
 ---
 title: "HackMyVM - Coolpgi : SQLi, extraction de creds et privesc via find"
 description: "Walkthrough complet d'une machine HackMyVM impliquant découverte réseau, injection SQL sur une appli nginx, extraction de credentials et élévation de privilèges via un script find mal configuré."
-pubDatetime: 2026-02-03
+pubDatetime: 2026-02-03T00:00:00Z
 tags: ["CTF", "HackMyVM", "SSH", "Nginx", "SQL", "SQLi", "PrivEsc", "Enumeration"]
 image: { src: "/images/hackmyvm-coolpgi.png", alt: "Machine Coolpgi HackMyVM" }
 draft: false

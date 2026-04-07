@@ -1,7 +1,7 @@
 ---
 title: "HackMyVM - PDF : Du brute force PDF à l'accès SSH"
 description: "Walkthrough complet d'une machine HackMyVM impliquant enumeration web, brute force de cookie, téléchargement massif de PDF via MD5, et extraction de credentials depuis les métadonnées."
-pubDatetime: 2026-01-13
+pubDatetime: 2026-01-13T00:00:00Z
 tags: ["CTF", "HackMyVM", "SSH", "Apache", "Golang", "Enumeration", "Python"]
 image: { src: "/images/hackmyvm-pdf.png", alt: "Machine PDF HackMyVM" }
 draft: false
